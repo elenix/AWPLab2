@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <car_list>
     <car>
-        <name>Black Car</name>
+        <name>Volkswagen Atlantic 2015 Volkswagen Fox</name>
+        <color>Black</color>
+        <brand>Volkswagen</brand>
         <price>RM100k!</price>
         <description>This car have black colour woo</description>
+        <contact>018 - 7798901</contact>
+        <Oname>Siang Gay</Oname>
         <image>img/black0.png</image>
     </car>
     <car>
-        <name>Red Car</name>
+        <name>Naza Sorento Pyeonghwa Ppeokkuggi 2405 </name>
+        <color>Red</color>
+        <brand>Naza</brand>
         <price>RM80k!</price>
         <description>You see that red? its look killing!</description>
+        <contact>017 - 7238911</contact>
+        <Oname>Baseem Bibi</Oname>
         <image>img/merah0.jpg</image>
     </car>
     <car>
-        <name>Yellow Car</name>
+        <name>Bugatti Automobiles (Volkswagen) Veyron 16.4</name>
+        <color>Yellow</color>
+        <brand>Bugatti</brand>
         <price>RM90k!</price>
         <description>This car so good in night mode</description>
+        <contact>013 - 6598123</contact>
+        <Oname>Dahaga KHakim</Oname>
         <image>img/yellow0.jpg</image>
     </car>
     <car>
-        <name>Silver Car</name>
+        <name>Hyundai Genesis Coupe Executive car</name>
+        <color>Silver</color>
+        <brand>Hyundai</brand>
         <price>RM70k!</price>
         <description>Look expensive right?</description>
+        <contact>011 - 1256001</contact>
+        <Oname>Faiq Bangla</Oname>
         <image>img/silver0.jpg</image>
     </car>
     <car>
-        <name>Green Car</name>
+        <name>Proton Iriz P2-30A Compact Car (PCC)</name>
+        <color>Green</color>
+        <brand>Proton</brand>
         <price>RM60k</price>
         <description>If you love forest, then go buy la</description>
+        <contact>019 - 7348111</contact>
+        <Oname>El Enix</Oname>
         <image>img/hijau0.jpg</image>
     </car>
 </car_list>

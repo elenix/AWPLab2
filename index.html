@@ -3,56 +3,48 @@
     <head>
         <title>Web Programming Lab test 2</title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/Style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <style>
-            #car {
-                font:13px Arial;
-                text-align:center;
-                overflow:hidden;
-                padding-left: 300px;
-                padding-right: 300px;
-            }
-            #car div  {
-                width:auto;
-                text-align:left;
-                margin:1px;
-                padding:2px 5px;
-                letter-spacing:1px;
-            }
-        </style>
+        <script src="Js/PullData.js"></script>
     </head>
     <body>
-        <h1 style="margin-left:500px; margin-bottom:20px;">CAR FOR SALE!! yale YALE!</h1>
-        <div id="car"></div>
-        <script>
-            $(document).ready(function() {
-                $.ajax({
-                    type: 'GET',
-                    url: 'xml/car_list.xml',
-                    dataType: 'xml',
-                    success: function(xml) {
-                        $(xml).find('car').each(function() {
-                            $('#car').append(
-                                '<div class="jumbotron>">'+
-                                '<table class="table">' +
-                                '<tbody>'+
-                                '<tr>'+
-                                    '<td><img src="' +
-                                            $(this).find('image').text() + '" width="300px"></td>'+
-                                    '<td><div><b>Name: </b>' +
-                                        $(this).find('name').text() + '</div> ' +
-                                    '<div><b>Description: </b>' +
-                                        $(this).find('description').text() + '</div> ' +
-                                    '<div style="color:red; font-size:30px;">' +
-                                        $(this).find('price').text() + '</div><button type="button" class="btn btn-primary" style="width:100px">Buy</button></td>' +
-                                '<tr>'+
-                                '</tbody>'+
-                                '</table><div>');
-                        });
-                    }
-                });
-            });
-        </script>
+        <div class="container">
+              <div class="header clearfix">
+                  <nav>
+                  <ul class="nav nav-pills float-right">
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </ul>
+                </nav>
+                <h3 class="text-muted">Lab Test 2</h3>
+                  <hr class="my-4">
+              </div>
+              <div class="jumbotron">
+                <h1 class="display-3">Car For Sale !!</h1>
+                  <hr class="my-4">
+                    <p class="lead">The year of crazy discaunt have come again! We all know you guys have been waiting for this moment. Dont miss your chance to buy your dream car with this crazy discaunt! Contact us if you are interested! And yeah, no debt! Be a Man!</p>
+              </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+            <div id="car"></div>
+        </div>
     </body>
 </html>
