@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<car_list>
+    <car>
+        <name>Black Car</name>
+        <price>RM100k!</price>
+        <description>This car have black colour woo</description>
+        <image>img/black0.png</image>
+    </car>
+    <car>
+        <name>Red Car</name>
+        <price>RM80k!</price>
+        <description>You see that red? its look killing!</description>
+        <image>img/merah0.jpg</image>
+    </car>
+    <car>
+        <name>Yellow Car</name>
+        <price>RM90k!</price>
+        <description>This car so good in night mode</description>
+        <image>img/yellow0.jpg</image>
+    </car>
+    <car>
+        <name>Silver Car</name>
+        <price>RM70k!</price>
+        <description>Look expensive right?</description>
+        <image>img/silver0.jpg</image>
+    </car>
+    <car>
+        <name>Green Car</name>
+        <price>RM60k</price>
+        <description>If you love forest, then go buy la</description>
+        <image>img/hijau0.jpg</image>
+    </car>
+</car_list>

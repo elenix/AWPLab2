@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Programming Lab test 2</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <style>
+            #car {
+                font:13px Arial;
+                text-align:center;
+                overflow:hidden;
+                padding-left: 300px;
+                padding-right: 300px;
+            }
+            #car div  {
+                width:auto;
+                text-align:left;
+                margin:1px;
+                padding:2px 5px;
+                letter-spacing:1px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-left:500px; margin-bottom:20px;">CAR FOR SALE!! yale YALE!</h1>
+        <div id="car"></div>
+        <script>
+            $(document).ready(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: 'xml/car_list.xml',
+                    dataType: 'xml',
+                    success: function(xml) {
+                        $(xml).find('car').each(function() {
+                            $('#car').append(
+                                '<div class="jumbotron>">'+
+                                '<table class="table">' +
+                                '<tbody>'+
+                                '<tr>'+
+                                    '<td><img src="' +
+                                            $(this).find('image').text() + '" width="300px"></td>'+
+                                    '<td><div><b>Name: </b>' +
+                                        $(this).find('name').text() + '</div> ' +
+                                    '<div><b>Description: </b>' +
+                                        $(this).find('description').text() + '</div> ' +
+                                    '<div style="color:red; font-size:30px;">' +
+                                        $(this).find('price').text() + '</div><button type="button" class="btn btn-primary" style="width:100px">Buy</button></td>' +
+                                '<tr>'+
+                                '</tbody>'+
+                                '</table><div>');
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
